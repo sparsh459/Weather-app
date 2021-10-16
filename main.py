@@ -5,7 +5,7 @@ import time # to format some variables
 # defining a function to get data from the api
 def getweather(canvas):
     city = textfield.get()
-    api = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=71c6872d17e86e62c2594277bf48f749"
+    api = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid={API KEY}"
     
     # calling json data from api by requests
     json_data = requests.get(api).json()
